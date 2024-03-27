@@ -1,0 +1,31 @@
+name: task
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: ">=3.3.1 <4.0.0"
+
+dependencies:
+  cupertino_icons: ^1.0.6
+  get: ^4.6.6
+  get_cli: ^1.8.1
+  email_validator: ^2.1.17
+  firebase_core: ^2.27.1
+  firebase_auth: ^4.17.9
+  google_sign_in: ^6.2.1
+  another_flutter_splash_screen: ^1.2.0
+  image_picker: ^1.0.7
+  cloud_firestore: ^4.15.9
+  firebase_storage: ^11.6.10
+  permission_handler: ^11.3.0
+
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
