@@ -85,10 +85,9 @@ class LoginView extends GetView<LoginController> {
                     onPressed: () async {
                       controller.signInWithGoogle();
                     },
-                    icon: Image.network(
-                      'https://1000logos.net/wp-content/uploads/2021/05/Google-logo-500x281.png',
-                      height: 100,
-                      width: 100,
+                    icon: Icon(
+                      Icons.g_mobiledata,
+                      size: 50,
                     ))
               ],
             ),

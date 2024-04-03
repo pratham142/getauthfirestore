@@ -10,6 +10,9 @@ abstract class Routes {
   static const SPLASHSCREEN = _Paths.SPLASHSCREEN;
   static const PROFILE = _Paths.PROFILE;
   static const TOGGLEPAGES = _Paths.TOGGLEPAGES;
+  static const FORM1 = _Paths.FORM1;
+  static const FORM2 = _Paths.FORM2;
+  static const DRAWBOARD = _Paths.DRAWBOARD;
 }
 
 abstract class _Paths {
@@ -21,4 +24,7 @@ abstract class _Paths {
   static const SPLASHSCREEN = '/splashscreen';
   static const PROFILE = '/profile';
   static const TOGGLEPAGES = '/togglepages';
+  static const FORM1 = '/form1';
+  static const FORM2 = '/form2';
+  static const DRAWBOARD = '/drawboard';
 }

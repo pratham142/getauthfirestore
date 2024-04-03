@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:task/app/modules/form1/views/form1_view.dart';
 import 'package:task/app/modules/profile/views/profile_view.dart';
 import 'package:task/app/modules/register_view/views/register_view_view.dart';
 import 'package:task/widgets.dart';
@@ -14,7 +15,12 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('Dashboard')),
+        title: Center(
+            child: Column(
+          children: [
+            Text('Dashboard'),
+          ],
+        )),
         actions: [
           IconButton(
               onPressed: () {
@@ -37,7 +43,18 @@ class HomeView extends GetView<HomeController> {
               Center(
                 child: Text(
                     'Welcome ! ${FirebaseAuth.instance.currentUser!.email}'),
-              )
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              ElevatedButton(
+                  onPressed: () {
+                    Get.to(Form1View());
+                  },
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [Icon(Icons.add), Text('create form')],
+                  ))
             ],
           ),
         ),

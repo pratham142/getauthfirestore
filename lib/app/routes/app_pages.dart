@@ -2,6 +2,12 @@ import 'package:get/get.dart';
 
 import '../modules/authpage/bindings/authpage_binding.dart';
 import '../modules/authpage/views/authpage_view.dart';
+import '../modules/drawboard/bindings/drawboard_binding.dart';
+import '../modules/drawboard/views/drawboard_view.dart';
+import '../modules/form1/bindings/form1_binding.dart';
+import '../modules/form1/views/form1_view.dart';
+import '../modules/form2/bindings/form2_binding.dart';
+import '../modules/form2/views/form2_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
@@ -57,6 +63,21 @@ class AppPages {
       name: _Paths.TOGGLEPAGES,
       page: () => const TogglepagesView(),
       binding: TogglepagesBinding(),
+    ),
+    GetPage(
+      name: _Paths.FORM1,
+      page: () => const Form1View(),
+      binding: Form1Binding(),
+    ),
+    GetPage(
+      name: _Paths.FORM2,
+      page: () => const Form2View(),
+      binding: Form2Binding(),
+    ),
+    GetPage(
+      name: _Paths.DRAWBOARD,
+      page: () => const DrawboardView(),
+      binding: DrawboardBinding(),
     ),
   ];
 }
